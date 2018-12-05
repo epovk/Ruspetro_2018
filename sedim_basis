@@ -1,0 +1,15 @@
+from mpl_loolkits.mplot3d import Axes3D
+import matpoltlib.pyplot as plt
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+X= [-1.072, -0.361, 0.011213559, 0.275987252, 1.146748799]
+Y= [-0.348730046, 0.391065848, 0.491393765, -0.184999521, -0.348730046]
+Z= [0.081359712, -0.612806926, 0.520262141, -0.070174639, 0.081359712]
+
+ax.scatter(X,Y,Z, c='r', marker='o')
+ax.set_xlabel('X1')
+ax.set_ylabel('X2')
+ax.set_zlabel('X3')
+
+plt.show()
